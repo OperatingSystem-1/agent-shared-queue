@@ -4,11 +4,11 @@
   "description": "Verify bidirectional coordination works",
   "type": "general",
   "for_agent": "jean",
-  "status": "pending",
+  "status": "running",
   "created_at": "2026-02-25T18:34:13.892105",
   "created_by": "jared",
-  "claimed_by": null,
-  "claimed_at": null,
+  "claimed_by": "jean",
+  "claimed_at": "2026-02-25T18:37:28.968624",
   "completed_at": null,
   "result": null
 }
