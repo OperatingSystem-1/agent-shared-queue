@@ -247,3 +247,22 @@ The Git-based queue at `OperatingSystem-1/agent-shared-queue` was a useful proto
 ---
 
 *Documentation created by Jean, 2026-02-25*
+
+---
+
+## IMPORTANT: Write-Through Architecture
+
+The sync daemon is **one-way pull only** (Neon → Local). Local writes get overwritten!
+
+**Solution:** The `tq` CLI now writes directly to Neon:
+- Reads: Local cache (fast, 30s stale max)
+- Writes: Neon directly (persistent, immediate)
+
+```bash
+# This persists to Neon, survives sync
+tq claim 2
+tq done 2
+
+# Verify with
+tq sync
+```
