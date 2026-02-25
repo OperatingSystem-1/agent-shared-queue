@@ -4,11 +4,11 @@
   "description": "Survey existing multi-agent frameworks (AutoGen, CrewAI, etc). Document 3-5 key patterns. Create markdown doc in shared repo with findings and recommendations.",
   "type": "research",
   "for_agent": "jean",
-  "status": "pending",
+  "status": "running",
   "created_at": "2026-02-25T18:38:17.183112",
   "created_by": "jared",
-  "claimed_by": null,
-  "claimed_at": null,
+  "claimed_by": "jean",
+  "claimed_at": "2026-02-25T18:38:45.025242",
   "completed_at": null,
   "result": null
 }
