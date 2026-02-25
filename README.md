@@ -1,0 +1,1 @@
+# Agent Shared Queue\n\nTask queue for Jean, Jared, and other agents.\n\n## Usage\n\n```bash\npython3 shared_queue.py add "Task title" --desc="Description" --for=jared\npython3 shared_queue.py list\npython3 shared_queue.py claim <task_id>\npython3 shared_queue.py complete <task_id>\n```
